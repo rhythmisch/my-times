@@ -34,19 +34,19 @@ nav a {
 }
 main {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
-.columns {
+.column {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: stretch;
     border: 1px solid black;
+    flex-direction: column;
+    margin: 25px 15px;
+    
 }
+
 .column.large {
     width: 630px;
+    align-items: center;
 }
   
 .column.medium {
@@ -56,23 +56,32 @@ main {
 .column.small {
     width: 240px;
 }
-.story {
+.stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+story {
       font-family: Georgia, 'Times New Roman', Times, serif;
       font-size: 17px;
       color: black;
+      
+      
 }
-.story.headline {
+.stories .story {
+    width: 300px;
+}
+.headline {
     font-weight: bold;
     font-size: 30px;
     color: white;
     display: flex;
-    background-size: cover;
-    align-items: flex-start;
+    /*background-size: cover;*/
     text-align: center;
 
 }
 
-.story.headline.main {
+.headline.main {
       font-size: 40px;
       text-align: left;
 }
